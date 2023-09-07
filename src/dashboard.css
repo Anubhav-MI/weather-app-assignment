@@ -1,0 +1,90 @@
+body {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  background-image: url("https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.833);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-attachment: fixed;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+}
+.heading {
+  font-size: 6rem;
+}
+.sub-heading {
+  font-size: 1.5rem;
+}
+.input {
+  height: 2.5rem;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+.tempscale {
+  padding: 1rem;
+}
+
+.main-body {
+  display: flex;
+  width: 60rem;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: flex-start; /* Adjust as needed */
+  gap: 5rem;
+  color: #033031;
+}
+.WeatherCard {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+button {
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    position: absolute;
+    top: 0%;
+    left: 80%;
+  }
+  .heading {
+    text-align: center;
+  }
+
+  .main-body {
+    display: flex;
+    width: 60rem;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: flex-start; /* Adjust as needed */
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .main {
+    height: 10rem;
+    position: absolute;
+    left: 55%;
+  }
+
+  .main-body {
+    width: 100%;
+  }
+  .heading {
+    font-size: 3rem;
+  }
+  .sub-heading {
+    font-size: 1rem;
+  }
+}
